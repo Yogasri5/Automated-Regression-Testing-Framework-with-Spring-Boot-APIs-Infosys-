@@ -1,91 +1,38 @@
-Testing Framework – Spring Boot Application
-Project Overview
+**Testing Framework – Spring Boot Application
+Project Overview**
 
 This project is a Maven-based Spring Boot Testing Framework designed to manage, execute, and analyze API and UI test cases.
 It provides REST APIs, execution scheduling, analytics dashboards, and UI pages for monitoring test runs and results.
 
-The framework supports:
+**The framework supports:**
 
 API testing (REST-based)
-
 UI testing (Selenium WebDriver)
-
 Test execution scheduling
-
 Result tracking and analytics
-
 Dashboard-based monitoring
 
-Project Structure
-testingFramework/
-│
-├── .gitattributes
-├── .gitignore
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── infosys/
-│   │   │           └── testingFramework/
-│   │   │               ├── TestingFrameworkApplication.java
-│   │   │               ├── controllers/
-│   │   │               ├── dtos/
-│   │   │               ├── exceptions/
-│   │   │               ├── execution/
-│   │   │               ├── models/
-│   │   │               ├── repositories/
-│   │   │               └── service/
-│   │   │
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       ├── static/
-│   │       └── templates/
-│   │
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── infosys/
-│                   └── testingFramework/
-│                       └── TestingFrameworkApplicationTests.java
-│
-└── target/
 
-Features
-Test Case Management
+
+**Features
+Test Case Management**
 
 Create, update, retrieve, and delete test cases
-
 Support for API and UI test types
-
 Test Execution
-
 Execute tests on demand
-
 Schedule test executions
-
 Track execution status and timestamps
-
 Analytics
-
 Failure trend analysis
-
 Execution history insights
-
 Dashboard-based visualization
-
 Web Interface
-
 Dashboard view
-
 Execution monitoring page
-
 Analytics dashboard using Thymeleaf templates
 
-Technology Stack
+**Technology Stack**
 
 Backend: Java, Spring Boot
 
