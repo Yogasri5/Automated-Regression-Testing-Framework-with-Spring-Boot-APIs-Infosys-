@@ -6,10 +6,14 @@ It provides REST APIs, execution scheduling, analytics dashboards, and UI pages 
 
 **The framework supports:**
 
-API testing (REST-based)
+API testing (REST-based) 
+
 UI testing (Selenium WebDriver)
+
 Test execution scheduling
+
 Result tracking and analytics
+
 Dashboard-based monitoring
 
 
@@ -18,62 +22,75 @@ Dashboard-based monitoring
 Test Case Management**
 
 Create, update, retrieve, and delete test cases
+
 Support for API and UI test types
+
 Test Execution
+
 Execute tests on demand
+
 Schedule test executions
+
 Track execution status and timestamps
+
 Analytics
+
 Failure trend analysis
+
 Execution history insights
+
 Dashboard-based visualization
+
 Web Interface
+
 Dashboard view
+
 Execution monitoring page
+
 Analytics dashboard using Thymeleaf templates
 
 **Technology Stack**
 
-Backend: Java, Spring Boot
+**Backend:** Java, Spring Boot
 
-Build Tool: Maven
+**Build Tool:** Maven
 
-Database: JPA / Hibernate
+**Database:** JPA / Hibernate
 
-API Testing: REST Assured
+**API Testing:** REST Assured
 
-UI Testing: Selenium WebDriver
+**UI Testing:** Selenium WebDriver
 
-Frontend: Thymeleaf
+**Frontend:** Thymeleaf
 
-Version Control: Git
+**Version Control:** Git
 
-Key Components
-Controllers
+**Key Components**
+**Controllers**
 
-AnalyticsController – Analytics-related APIs
+**AnalyticsController** – Analytics-related APIs
 
-ExecutionController – Test execution and scheduling
+**ExecutionController** – Test execution and scheduling
 
-TestCaseController – CRUD operations for test cases
+**TestCaseController** – CRUD operations for test cases
 
-UiController – Web UI endpoints
+**UiController** – Web UI endpoints
 
-Services
+**Services**
 
-TestCaseService – Test case business logic
+**TestCaseService** – Test case business logic
 
-ExecutionService – Execution and scheduling logic
+**ExecutionService** – Execution and scheduling logic
 
-AnalyticsService – Analytics calculations
+**AnalyticsService** – Analytics calculations
 
-Execution Layer
+**Execution Layer**
 
-ApiTestRunner – Runs API tests
+**ApiTestRunner** – Runs API tests
 
-SeleniumTestRunner – Runs UI tests
+**SeleniumTestRunner** – Runs UI tests
 
-ExecutionTask – Execution task handling
+**ExecutionTask** – Execution task handling
 
 Models (Entities)
 
@@ -87,12 +104,12 @@ TestResult
 
 Configuration
 
-All application configurations are managed in:
+**All application configurations are managed in:**
 
 src/main/resources/application.properties
 
 
-This includes:
+**This includes:**
 
 Database configuration
 
@@ -107,17 +124,17 @@ Java 8 or higher
 
 Git
 
-Steps
+**Steps**
 git clone <repository-url>
 cd testingFramework
 ./mvnw spring-boot:run
 
 
-For Windows:
+**For Windows:**
 
 mvnw.cmd spring-boot:run
 
-Running Tests
+**Running Tests**
 ./mvnw test
 
 Future Enhancements
@@ -132,7 +149,7 @@ Parallel test execution
 
 Cloud browser support
 
-Author
+**Author**
 
 Yogasri Kandepalli
 Spring Boot | Java | Automation Testing
