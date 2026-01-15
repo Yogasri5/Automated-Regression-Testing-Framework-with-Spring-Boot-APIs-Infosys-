@@ -1,4 +1,3 @@
-# Automated-Regression-Testing-Framework-with-Spring-Boot-APIs-Infosys-
 Testing Framework – Spring Boot Application
 Project Overview
 
@@ -28,15 +27,18 @@ testingFramework/
 │
 ├── src/
 │   ├── main/
-│   │   ├── java/com/infosys/testingFramework/
-│   │   │   ├── TestingFrameworkApplication.java
-│   │   │   ├── controllers/
-│   │   │   ├── dtos/
-│   │   │   ├── exceptions/
-│   │   │   ├── execution/
-│   │   │   ├── models/
-│   │   │   ├── repositories/
-│   │   │   └── service/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── infosys/
+│   │   │           └── testingFramework/
+│   │   │               ├── TestingFrameworkApplication.java
+│   │   │               ├── controllers/
+│   │   │               ├── dtos/
+│   │   │               ├── exceptions/
+│   │   │               ├── execution/
+│   │   │               ├── models/
+│   │   │               ├── repositories/
+│   │   │               └── service/
 │   │   │
 │   │   └── resources/
 │   │       ├── application.properties
@@ -44,8 +46,11 @@ testingFramework/
 │   │       └── templates/
 │   │
 │   └── test/
-│       └── java/com/infosys/testingFramework/
-│           └── TestingFrameworkApplicationTests.java
+│       └── java/
+│           └── com/
+│               └── infosys/
+│                   └── testingFramework/
+│                       └── TestingFrameworkApplicationTests.java
 │
 └── target/
 
@@ -156,13 +161,8 @@ Java 8 or higher
 Git
 
 Steps
-# Clone the repository
 git clone <repository-url>
-
-# Navigate to project directory
 cd testingFramework
-
-# Run the application
 ./mvnw spring-boot:run
 
 
