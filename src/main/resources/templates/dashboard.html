@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test Platform Dashboard</title>
+</head>
+<body>
+
+<h2>Create Test Case</h2>
+
+<form th:action="@{/ui/testcase}" method="post" th:object="${testCase}">
+    Name: <input th:field="*{name}"/><br/>
+
+    Type:
+    <select th:field="*{type}">
+        <option value="UI">UI</option>
+        <option value="API">API</option>
+    </select><br/>
+
+    Target: <input th:field="*{target}"/><br/>
+    Method: <input th:field="*{method}"/><br/>
+
+    <button type="submit">Create</button>
+</form>
+
+<hr/>
+
+<h2>Available Test Cases</h2>
+
+<form th:action="@{/ui/run}" method="post">
+    <div th:each="tc : ${testCases}">
+        <input type="checkbox"
+               name="testCaseIds"
+               th:value="${tc.id}"/>
+        <span th:text="${tc.name}"></span>
+    </div>
+
+    <br/>
+    <button type="submit">Run Selected Tests</button>
+</form>
+
+<hr/>
+
+<a th:href="@{/ui/execution}">View Execution</a> |
+<a th:href="@{/ui/analytics}">View Analytics</a>
+
+</body>
+</html>

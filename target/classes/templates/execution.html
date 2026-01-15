@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Execution Results</title>
+</head>
+<body>
+
+<h2>Execution Results</h2>
+
+<table border="1">
+    <tr>
+        <th>Test Case ID</th>
+        <th>Status</th>
+        <th>Execution Time (ms)</th>
+        <th>Executed At</th>
+    </tr>
+
+    <tr th:each="r : ${results}">
+        <td th:text="${r.testCaseId}"></td>
+        <td th:text="${r.status}"></td>
+        <td th:text="${r.executionTime}"></td>
+        <td th:text="${r.executedAt}"></td>
+    </tr>
+</table>
+
+<br/>
+<a th:href="@{/ui/dashboard}">Back to Dashboard</a>
+
+</body>
+</html>
